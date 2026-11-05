@@ -1,0 +1,11 @@
+{
+  "name": "emissaoja-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Remote MCP server to issue Brazilian service invoices (NFS-e) via the national Emissor Nacional, without a digital certificate: emitir nota fiscal de serviço pelo Claude, ChatGPT, Cursor e VS Code.",
+  "homepage": "https://emissaoja.com.br/emitir-nota-fiscal-por-ia",
+  "repository": { "type": "git", "url": "git+https://github.com/Easymovel/emissaoja-mcp.git" },
+  "license": "MIT",
+  "keywords": ["mcp", "mcp-server", "remote-mcp", "nfse", "nfs-e", "nota-fiscal", "emissor-nacional", "brazil", "invoice"],
+  "author": "BINOBO LTDA (https://emissaoja.com.br)"
+}

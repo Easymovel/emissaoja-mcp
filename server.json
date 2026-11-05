@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "br.com.emissaoja/nfse",
+  "title": "emissaoja · NFS-e",
+  "description": "Issue Brazilian service invoices (NFS-e) via Emissor Nacional, no digital certificate",
+  "version": "0.1.0",
+  "websiteUrl": "https://emissaoja.com.br/emitir-nota-fiscal-por-ia",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://emissaoja.com.br/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. Bearer ej_live_... API key; without it, clients with OAuth sign in with Google. Test keys (ej_test_) work only at https://sandbox.emissaoja.com.br/mcp",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
