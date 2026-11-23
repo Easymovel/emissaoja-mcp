@@ -28,7 +28,7 @@ Never add `emitir_nota`, `cancelar_nota` or `configurar_credencial` to `autoAppr
 To use the account tools:
 
 1. If the client supports MCP OAuth, it opens the emissaoja sign-in on the first call: the user signs in with Google and authorizes.
-2. Otherwise, ask the user to sign in at https://emissaoja.com.br, create an API key in Conta → API, and add the header to the same entry:
+2. Otherwise, ask the user to sign in at [emissaoja.com.br](https://emissaoja.com.br/?origem=mcp-github&utm_source=github&utm_medium=readme&utm_campaign=home), create an API key in Conta → API, and add the header to the same entry:
 
 ```json
 "headers": { "Authorization": "Bearer ej_live_YOUR_KEY" }
@@ -44,4 +44,4 @@ Call `status` (no arguments): the response says whether the service and the tax 
 
 - Before `emitir_nota`, confirm customer, amount and description with the user, and pass a unique `referencia` per invoice: repeating the same `referencia` never issues twice.
 - After `emitir_nota`, poll `acompanhar_pedido` until `autorizada`, `recusada` or `incerta`, waiting `proxima_consulta_ms` between calls.
-- Docs: https://emissaoja.com.br/docs/ · MCP guide: https://emissaoja.com.br/emitir-nota-fiscal-por-ia
+- Docs: [emissaoja.com.br/docs](https://emissaoja.com.br/docs/?origem=mcp-github&utm_source=github&utm_medium=readme&utm_campaign=docs) · MCP guide: [emissaoja.com.br/emitir-nota-fiscal-por-ia](https://emissaoja.com.br/emitir-nota-fiscal-por-ia?origem=mcp-github&utm_source=github&utm_medium=readme&utm_campaign=emitir-nota-fiscal-por-ia)

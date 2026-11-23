@@ -4,7 +4,7 @@
   "title": "emissaoja · NFS-e",
   "description": "Issue Brazilian service invoices (NFS-e) via Emissor Nacional, no digital certificate",
   "version": "0.1.0",
-  "websiteUrl": "https://emissaoja.com.br/emitir-nota-fiscal-por-ia",
+  "websiteUrl": "https://emissaoja.com.br/emitir-nota-fiscal-por-ia?origem=mcp-github&utm_source=github&utm_medium=pacote&utm_campaign=emitir-nota-fiscal-por-ia",
   "remotes": [
     {
       "type": "streamable-http",

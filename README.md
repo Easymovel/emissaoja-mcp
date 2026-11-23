@@ -8,7 +8,7 @@ Remote [Model Context Protocol](https://modelcontextprotocol.io) server to **iss
 https://emissaoja.com.br/mcp
 ```
 
-This repository holds the public documentation and the [MCP Registry](https://registry.modelcontextprotocol.io) manifest ([`server.json`](server.json), name `br.com.emissaoja/nfse`). The server is hosted by [emissaoja](https://emissaoja.com.br/emitir-nota-fiscal-por-ia); there is nothing to install or run.
+This repository holds the public documentation and the [MCP Registry](https://registry.modelcontextprotocol.io) manifest ([`server.json`](server.json), name `br.com.emissaoja/nfse`). The server is hosted by [emissaoja](https://emissaoja.com.br/emitir-nota-fiscal-por-ia?origem=mcp-github&utm_source=github&utm_medium=readme&utm_campaign=emitir-nota-fiscal-por-ia); there is nothing to install or run.
 
 [![Install in Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/install-mcp?name=emissaoja&config=eyJ1cmwiOiJodHRwczovL2VtaXNzYW9qYS5jb20uYnIvbWNwIn0=) [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_emissaoja_MCP-0098FF?logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=emissaoja&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Femissaoja.com.br%2Fmcp%22%7D)
 
@@ -38,7 +38,7 @@ This repository holds the public documentation and the [MCP Registry](https://re
 ## Authentication
 
 - **OAuth (recommended):** Claude, ChatGPT, Claude Code, Cursor and VS Code open the emissaoja sign-in the first time a tool needs an account. Sign in with Google and authorize. The connection lasts 60 days without use and can be revoked in Conta → API.
-- **API key:** clients without OAuth send `Authorization: Bearer ej_live_...`. Create the key in [emissaoja.com.br](https://emissaoja.com.br/?origem=mcp-github) → Conta → API.
+- **API key:** clients without OAuth send `Authorization: Bearer ej_live_...`. Create the key in [emissaoja.com.br](https://emissaoja.com.br/?origem=mcp-github&utm_source=github&utm_medium=readme&utm_campaign=home) → Conta → API.
 - **Sandbox:** `https://sandbox.emissaoja.com.br/mcp` with `ej_test_` keys runs against a simulated Emissor Nacional (nothing reaches the tax authority). Example company: CNPJ `11111111000191`, any password.
 
 ## Connect
@@ -93,7 +93,7 @@ claude mcp add --transport http emissaoja https://emissaoja.com.br/mcp --header 
 
 ## Em português
 
-Servidor MCP remoto do [emissaoja](https://emissaoja.com.br/emitir-nota-fiscal-por-ia) para **emitir NFS-e pelo seu assistente de IA** (Claude, ChatGPT, Cursor, VS Code): o assistente consulta sua empresa, cadastra clientes pelo CNPJ, emite a nota no Emissor Nacional **sem certificado digital**, acompanha a autorização e cancela, sempre confirmando com você antes de emitir ou cancelar. Para MEI e empresas do Simples Nacional. Plano Grátis com 1 nota por mês; planos em [emissaoja.com.br/#precos](https://emissaoja.com.br/#precos). Documentação da API: [emissaoja.com.br/docs](https://emissaoja.com.br/docs/).
+Servidor MCP remoto do [emissaoja](https://emissaoja.com.br/emitir-nota-fiscal-por-ia?origem=mcp-github&utm_source=github&utm_medium=readme&utm_campaign=emitir-nota-fiscal-por-ia) para **emitir NFS-e pelo seu assistente de IA** (Claude, ChatGPT, Cursor, VS Code): o assistente consulta sua empresa, cadastra clientes pelo CNPJ, emite a nota no Emissor Nacional **sem certificado digital**, acompanha a autorização e cancela, sempre confirmando com você antes de emitir ou cancelar. Para MEI e empresas do Simples Nacional. Plano Grátis com 1 nota por mês; planos em [emissaoja.com.br/#precos](https://emissaoja.com.br/?origem=mcp-github&utm_source=github&utm_medium=readme&utm_campaign=precos#precos). Documentação da API: [emissaoja.com.br/docs](https://emissaoja.com.br/docs/?origem=mcp-github&utm_source=github&utm_medium=readme&utm_campaign=docs).
 
 Bibliotecas oficiais da mesma API: [Node.js/TypeScript](https://github.com/Easymovel/emissaoja-js) · [Python](https://github.com/Easymovel/emissaoja-py) · [PHP/Laravel](https://github.com/Easymovel/emissaoja-php) · [.NET](https://github.com/Easymovel/emissaoja-dotnet) · [Go](https://github.com/Easymovel/emissaoja-go) · [Ruby](https://github.com/Easymovel/emissaoja-ruby) · [n8n](https://github.com/Easymovel/n8n-nodes-emissaoja) · [WooCommerce](https://github.com/Easymovel/emissaoja-woocommerce).
 
